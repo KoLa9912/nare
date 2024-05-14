@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ndapp
+    name: naresh
+  name: pd33
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: ndapp
+  template:
+    metadata:
+      labels:
+        app: ndapp
+        aw: qwerr
+      name: pod1 
+    spec:
+      containers:
+      - name: c1
+        image: nginx
